@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Niru-Movie Info App</title>
+    <!-- bootswatch stylesheet-->
+    <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- this is a simple movie searching app. I am using omdbAPI along with axio and  html,css,javascript. No framework-->
+   <!-- navbar -->
+   <nav class="navbar navbar-default">
+       <div class="container">
+           <div class="navbar-header">
+               <a href="index.html" class="navbar-brand">NIRU</a><span>A movies info finder.</span>
+           </div>
+       </div>
+   </nav>
+
+   <!-- jumbotron area to search the movie info-->
+   <div class="container">
+       <div class="jumbotron">
+           <h3 class="text-center">Search the movie</h3>
+           <form action="" id="searchForm">
+               <input type="text" class="form-control" id="movieSearch" placeholder="type movie name here...">
+           </form>
+       </div>
+   </div>
+
+   <!-- container to output the search result-->
+   <div class="container">
+       <div id="movies" class="row"></div>
+   </div>
+<div class="footer" style="text-align:center;">
+   <a href="https://github.com/Pritam-Chougale">Site By Pritam Chougale</a>
+</div>
+   <!-- jquery CDN-->
+   <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <!-- axios js-->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <!-- my script-->
+  <script src="js/main.js"></script>
+</body>
+</html>
